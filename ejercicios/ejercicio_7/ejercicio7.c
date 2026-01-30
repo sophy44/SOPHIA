@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 float solicitar1()
 {
     float nota1 = 0;
@@ -6,6 +7,7 @@ float solicitar1()
     scanf(" %f", &nota1);
     return nota1;
 }
+
 float solicitar2()
 {
     float nota2 = 0;
@@ -13,6 +15,7 @@ float solicitar2()
     scanf(" %f", &nota2);
     return nota2;
 }
+
 float solicitar3()
 {
     float nota3 = 0;
@@ -20,6 +23,7 @@ float solicitar3()
     scanf(" %f", &nota3);
     return nota3;
 }
+
 float operacion(float nota1, float nota2, float nota3)
 {
     float resultadosub = 0;
@@ -49,12 +53,9 @@ int main()
         else
             printf("Nota ingresada no valida, intente nuevamente\n");
     }
-    
-    
 
     while (rta == 's')
     {
-        
     }
 
     resultado = operacion(nota1, nota2, nota3);
