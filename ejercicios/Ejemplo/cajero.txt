@@ -1,0 +1,26 @@
+int menu(){
+    int opcion=0;
+    printf("bienvenidos soy un cajero portatil \n");
+    printf("escoje 1: \n");
+    printf("1. Depositar. \n");
+    printf("2. Sacar. \n");
+    scanf("%d", & opcion );
+    return opcion; 
+ }
+ 
+ int solicitud(){
+     int numero = 0, resultado = 0;
+       printf("ingrese una cantidad: ");
+        scanf("%d", &numero );
+        return numero;
+ }
+    int depositar () {
+   int numero;
+	return numero + 200;
+}
+    
+int main()
+{
+    
+    
+}

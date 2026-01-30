@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar C con MinGW",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compila el archivo C activo con MinGW"
+    },
+    {
+      "label": "Ejecutar programa",
+      "type": "shell",
+      "command": "cmd",
+      "args": ["/c", "${fileBasenameNoExtension}.exe"],
+      "dependsOn": "Compilar C con MinGW",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": true
+      }
+    }
+  ]
+}
